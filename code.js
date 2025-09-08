@@ -1,5 +1,11 @@
 const supabaseUrl = 'https://YOUR_SUPABASE_URL';
 const supabaseAnonKey = 'YOUR_SUPABASE_ANON_KEY';
+if (
+  supabaseUrl.includes('YOUR_SUPABASE_URL') ||
+  supabaseAnonKey.includes('YOUR_SUPABASE_ANON_KEY')
+) {
+  console.warn('Replace Supabase URL and anon key in code.js');
+}
 const supabase = window.supabase.createClient(supabaseUrl, supabaseAnonKey);
 
 let currentGroup = null;
