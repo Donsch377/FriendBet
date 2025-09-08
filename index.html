@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>FriendBet</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script defer src="code.js"></script>
+</head>
+<body>
+  <h1>FriendBet</h1>
+
+  <div id="setup">
+    <section>
+      <h2>Create Group</h2>
+      <input id="create-name" placeholder="Your name" />
+      <input id="create-group-name" placeholder="Group name" />
+      <input id="create-join-code" placeholder="Join code" />
+      <input id="create-start-points" type="number" placeholder="Start points" value="100" />
+      <button id="create-group-btn">Create Group</button>
+    </section>
+
+    <section>
+      <h2>Join Group</h2>
+      <input id="join-name" placeholder="Your name" />
+      <input id="join-code" placeholder="Join code" />
+      <button id="join-group-btn">Join Group</button>
+    </section>
+  </div>
+
+  <div id="group" class="hidden">
+    <h2 id="group-title"></h2>
+
+    <section>
+      <h3>Members</h3>
+      <div id="members"></div>
+    </section>
+
+    <section>
+      <h3>Bets</h3>
+      <div id="bets"></div>
+    </section>
+
+    <section>
+      <h3>Create Bet</h3>
+      <input id="bet-desc" placeholder="Description" />
+      <input id="bet-a" placeholder="Option A" />
+      <input id="bet-b" placeholder="Option B" />
+      <div id="bet-exclusions"></div>
+      <button id="create-bet-btn">Create Bet</button>
+    </section>
+  </div>
+</body>
+</html>
