@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>FriendBet</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>FriendBet</h1>
+
+    <section id="create-group">
+      <h2>Create Group</h2>
+      <form id="create-group-form">
+        <label>
+          Group Name
+          <input type="text" name="groupName" required />
+        </label>
+        <label>
+          Start Points
+          <input type="number" name="startPoints" value="100" />
+        </label>
+        <label>
+          Your Name
+          <input type="text" name="memberName" required />
+        </label>
+        <button type="submit">Create Group</button>
+      </form>
+    </section>
+
+    <section id="join-group">
+      <h2>Join Group</h2>
+      <form id="join-group-form">
+        <label>
+          Join Code
+          <input type="text" name="joinCode" required />
+        </label>
+        <label>
+          Your Name
+          <input type="text" name="memberName" required />
+        </label>
+        <button type="submit">Join Group</button>
+      </form>
+    </section>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

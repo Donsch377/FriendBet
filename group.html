@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>FriendBet Group</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>FriendBet Group</h1>
+    <section id="group-info">
+      <h2 id="group-name"></h2>
+      <p>Join Code: <span id="group-code"></span></p>
+      <form id="update-group-form" class="admin-only hidden">
+        <label>
+          Group Name
+          <input type="text" id="group-name-input" />
+        </label>
+        <button type="submit">Save</button>
+      </form>
+      <button id="delete-group" class="admin-only hidden">Delete Group</button>
+    </section>
+
+    <section id="members">
+      <h3>Members</h3>
+      <ul id="member-list"></ul>
+    </section>
+
+    <section id="create-bet">
+      <h3>Create Bet</h3>
+      <form id="create-bet-form">
+        <label>
+          Description
+          <input type="text" name="description" required />
+        </label>
+        <label>
+          Option A
+          <input type="text" name="optionA" required />
+        </label>
+        <label>
+          Option B
+          <input type="text" name="optionB" required />
+        </label>
+        <label>
+          Exclude Members (comma separated)
+          <input type="text" name="exclusions" />
+        </label>
+        <button type="submit">Create Bet</button>
+      </form>
+    </section>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
