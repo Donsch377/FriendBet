@@ -10,29 +10,34 @@
 
     <section id="create-group">
       <h2>Create Group</h2>
-      <form>
+      <form id="create-group-form">
         <label>
           Group Name
-          <input type="text" name="groupName" />
+          <input type="text" name="groupName" required />
         </label>
         <label>
-          Join Code
-          <input type="text" name="joinCode" />
+          Start Points
+          <input type="number" name="startPoints" value="100" />
+        </label>
+        <label>
+          Your Name
+          <input type="text" name="memberName" required />
         </label>
         <button type="submit">Create Group</button>
       </form>
+      <p id="group-code-display"></p>
     </section>
 
     <section id="join-group">
       <h2>Join Group</h2>
-      <form>
+      <form id="join-group-form">
         <label>
           Join Code
-          <input type="text" name="joinCode" />
+          <input type="text" name="joinCode" required />
         </label>
         <label>
           Your Name
-          <input type="text" name="memberName" />
+          <input type="text" name="memberName" required />
         </label>
         <button type="submit">Join Group</button>
       </form>
@@ -40,18 +45,18 @@
 
     <section id="create-bet">
       <h2>Create Bet</h2>
-      <form>
+      <form id="create-bet-form">
         <label>
           Description
-          <input type="text" name="description" />
+          <input type="text" name="description" required />
         </label>
         <label>
           Option A
-          <input type="text" name="optionA" />
+          <input type="text" name="optionA" required />
         </label>
         <label>
           Option B
-          <input type="text" name="optionB" />
+          <input type="text" name="optionB" required />
         </label>
         <label>
           Exclude Members (comma separated)
@@ -60,5 +65,6 @@
         <button type="submit">Create Bet</button>
       </form>
     </section>
+    <script type="module" src="app.js"></script>
   </body>
 </html>

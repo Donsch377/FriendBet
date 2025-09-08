@@ -4,7 +4,7 @@ create extension if not exists "uuid-ossp";
 create table groups (
   id uuid primary key default uuid_generate_v4(),
   name text not null,
-  join_code text unique not null,
+  join_code text unique not null default upper(left(replace(uuid_generate_v4()::text, '-', ''), 6)),
   start_points integer not null default 100,
   created_at timestamp with time zone default timezone('utc'::text, now())
 );
