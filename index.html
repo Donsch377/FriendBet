@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>FriendBet</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>FriendBet</h1>
+
+    <section id="create-group">
+      <h2>Create Group</h2>
+      <form>
+        <label>
+          Group Name
+          <input type="text" name="groupName" />
+        </label>
+        <label>
+          Join Code
+          <input type="text" name="joinCode" />
+        </label>
+        <button type="submit">Create Group</button>
+      </form>
+    </section>
+
+    <section id="join-group">
+      <h2>Join Group</h2>
+      <form>
+        <label>
+          Join Code
+          <input type="text" name="joinCode" />
+        </label>
+        <label>
+          Your Name
+          <input type="text" name="memberName" />
+        </label>
+        <button type="submit">Join Group</button>
+      </form>
+    </section>
+
+    <section id="create-bet">
+      <h2>Create Bet</h2>
+      <form>
+        <label>
+          Description
+          <input type="text" name="description" />
+        </label>
+        <label>
+          Option A
+          <input type="text" name="optionA" />
+        </label>
+        <label>
+          Option B
+          <input type="text" name="optionB" />
+        </label>
+        <label>
+          Exclude Members (comma separated)
+          <input type="text" name="exclusions" />
+        </label>
+        <button type="submit">Create Bet</button>
+      </form>
+    </section>
+  </body>
+</html>
