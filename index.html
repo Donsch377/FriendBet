@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FriendBet</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+  <div id="auth">
+    <h1>FriendBet</h1>
+    <section id="create-group">
+      <h2>Create Group</h2>
+      <input id="host-name" placeholder="Your name" />
+      <input id="group-name" placeholder="Group name" />
+      <button id="create-group-btn">Create</button>
+      <p id="create-group-result"></p>
+    </section>
+    <section id="join-group">
+      <h2>Join Group</h2>
+      <input id="join-name" placeholder="Your name" />
+      <input id="join-code" placeholder="Join code" />
+      <button id="join-group-btn">Join</button>
+    </section>
+  </div>
+
+  <div id="app" class="hidden">
+    <h2 id="group-title"></h2>
+    <div id="members"></div>
+    <section id="create-bet">
+      <h3>Create Bet</h3>
+      <input id="bet-desc" placeholder="Bet description" />
+      <label for="block-members">Hide from:</label>
+      <select id="block-members" multiple></select>
+      <button id="create-bet-btn">Create Bet</button>
+    </section>
+    <section id="bets">
+      <h3>Bets</h3>
+      <ul id="bet-list"></ul>
+    </section>
+  </div>
+
+  <script src="code.js"></script>
+</body>
+</html>
